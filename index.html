@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+
+<body>
+
+    <button class="open-modal" data-modal="modal-1">
+        Open Modal
+    </button>
+
+    <dialog id="modal-1">
+
+        <form>
+
+            <div class="modal-heading">
+
+                <h1 class="modal-title">
+                    Entrar
+                </h1>
+
+                <button class="close-modal" data-modal="modal-1" type="button">
+                    X
+                </button>
+
+            </div>
+
+            <div class="modal-content">
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email" id="email" name="email" placeholder="Seu Email">
+
+                </div>
+
+                <!--Ctrl + H (chance same attributes)-->
+                <div class="input-group">
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input type="password" id="senha" name="senha" placeholder="•••••••">
+                    <!--'••' => ("Alt + 0 + 1 + 4 + 9")-->
+
+                </div>
+
+                <div class="opcoes-senha">
+
+                    <div class="lembrar-mim">
+
+                        <input type="checkbox" name="lembrar_de_mim" id="lembrar_de_mim">
+
+                        <label for="lembrar_de_mim">
+                            Lembrar de mim
+                        </label>
+
+                    </div>
+
+                    <a href="#" class="cade-asenha">
+                        Esqueci Minha Senha..
+                    </a>
+
+                    <button type="button" class="login-button">
+                        Login
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+
+    <button class="open-modal" data-modal="modal-2">
+        Open Modal
+    </button>
+
+    <dialog id="modal-2">
+
+        <form>
+
+            <div class="modal-heading">
+
+                <h1 class="modal-title">
+                    Cadastre-se
+                </h1>
+
+                <button class="close-modal" data-modal="modal-2" type="button">
+                    X
+                </button>
+                <!--if t value of "data-modal" is not referencing properly the other one(button to open or to close) the js 'll not be able to close//open-->
+
+            </div>
+
+            <div class="modal-content">
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email" id="emailc" name="email" placeholder="Seu Email">
+
+                </div>
+
+               
+                <div class="input-group">
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input type="text" id="nomec" name="nome" placeholder="Seu Nome">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input type="password" id="senhac" name="senha" placeholder="•••••••">
+                    
+                </div>
+
+                <div class="opcoes-senha">
+
+                    <div class="lembrar-mim">
+
+                        <input type="checkbox" name="lembrar_de_mim" id="lembrar_de_mim">
+
+                        <label for="lembrar_de_mim">
+                            Eu Concordo com os Termos da Plataforma
+                        </label>
+
+                    </div>
+
+                    <button type="button" class="login-button">
+                        Create account
+                    </button>
+                    
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

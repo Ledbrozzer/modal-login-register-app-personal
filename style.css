@@ -1,0 +1,110 @@
+*:not(dialog){
+    /* ':not(dialog)' 'll aplic t styles to everything BUT the '(dialog)'*/
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6366f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 10px;
+}
+.open-modal{
+    background-color: #ffffff;
+    color: #6366f1;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+dialog{
+    border: none;
+    width: 350px;
+    border-radius: 24px;
+    padding: 18px;
+}
+.modal-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.modal-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #111928;
+}
+.close-modal{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #9ca3af;
+    font-size: 18px;
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.input-group label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #111928;
+}
+.input-group input{
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 10px 16px;
+}
+.input-group input:focus{
+    outline: 1px solid #6366f1;
+}
+.opcoes-senha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lembrar-mim{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #111928;
+}
+.cade-asenha{
+    font-size: 12px;
+    color: #1c64f2;
+    text-decoration: none;
+}
+.login-button{
+    background-color: #6366f1;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+} /*
+.register span{
+    font-size: 14px;
+    color: #6b7280;
+}
+.register a{
+    font-size: 14px;
+    color: #1c64f2;
+    text-decoration: none;
+} */
